@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bryan Núñez">
+    <title>CUTOCalc | Calcula tus Compras en CutoMex</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CUTOCalc</h1>
+        <h2>Calcula tus compras en CutoMex</h2>
+    </header>
+    <!--FUTURE NAVIGATION HERE-->
+    <nav></nav>
+
+    <main>
+        <form method="post" action="calcu.html" id="CutoCalc">
+            <fieldset>
+                <legend>Información</legend>
+                <label class="top">Dinero Disponible: 
+                    <input type="number" name="total" required>
+                </label>
+                <br>
+                <!--No pueden haber más de 14 compras CutoLux andando-->
+                <label class="top">Compras CutoLux Andando: 
+                    <input type="number" name="CutoLuxAndando">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Cupones</legend>
+                <!--No pueden ingresar más de dos Cupones CutoLux, ya que solo se pueden hacer dos compras de CutoLux al día. Cada cupon tiene un valor de $200 MXN-->
+                <label class="top">Cupones CutoLux: 
+                    <input type="number" name="CutoLuxCupones">
+                </label>
+                <br>
+                <label class="top">Cupones de $100: 
+                    <input type="number">
+                </label>
+                <br>
+                <label class="top">Cupones de $200: 
+                    <input type="number">
+                </label>
+                <br>
+                <label class="top">Cupones de $300: 
+                    <input type="number">
+                </label>
+                <br>
+                <label class="top">Cupones de $500: 
+                    <input type="number">
+                </label>
+            </fieldset>
+            <button class="calcularBtn" id="calcularBtn">Calcular</button>
+        </form>
+        <div id="tableBox">
+            <table>
+                <caption>Calculadora</caption>
+                <thead>
+                    <tr>
+                        <th colspan="7">Calcula tus Compras en CutoMex</th>
+                    </tr>
+                    <tr>
+                        <th colspan="5">Compras</th>
+                        <th colspan="2">CutoRewards</th>
+                    </tr>
+                    <tr>
+                        <th>Cupones</th>
+                        <th>Compras</th>
+                        <th>Categoría</th>
+                        <th>Costo</th>
+                        <th>Total</th>
+                        <th>Valor</th>
+                        <th>Recompensa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7">CutoFlash</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Zona Nueva</td>
+                        <td>$99</td>
+                        <td>$0</td>
+                        <td>0.05</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Unisex</td>
+                        <td>$299</td>
+                        <td>$0</td>
+                        <td>0.0083</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Hogar</td>
+                        <td>$599</td>
+                        <td>$0</td>
+                        <td>0.0042</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Maternidad</td>
+                        <td>$899</td>
+                        <td>$0</td>
+                        <td>0.0078</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Digital</td>
+                        <td>$1199</td>
+                        <td>$0</td>
+                        <td>0.0079</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">Black</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Zona Black 1</td>
+                        <td>$1399</td>
+                        <td>$0</td>
+                        <td>0.0125</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Zona Black 2</td>
+                        <td>$1899</td>
+                        <td>$0</td>
+                        <td>0.0132</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">CutoLux</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>CutoLux 1</td>
+                        <td>$999</td>
+                        <td>$0</td>
+                        <td>0.014</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>CutoLux 2</td>
+                        <td>$999</td>
+                        <td>$0</td>
+                        <td>0.014</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="6">Recompensa de la Compra</th>
+                        <th>$0</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="scripts/table.js"></script>
+</body>
+</html>

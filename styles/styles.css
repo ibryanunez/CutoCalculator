@@ -1,0 +1,44 @@
+/* Fonts */
+:root {
+    /* Fonts */
+  --heading-font: 'Cinzel', serif;
+  --paragraph-font: 'Crimson Text', serif;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: var(--paragraph-font);
+}
+
+main {
+  align-items: center;
+  margin: 0 auto;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#tableBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+th, td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 6px;
+}
